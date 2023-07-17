@@ -1,0 +1,42 @@
+<html>
+<script>
+function state()
+{
+var c=document.getElementById("t");
+var ctx=c.getContext("2d");
+//ctx.lineWidth="5";
+ctx.strokeStyle="blue";
+ctx.arc(200,200,100,0,7);
+ctx.stroke();
+ctx.fillStyle="blue";
+ctx.fill();
+
+ctx.beginPath();
+ctx.strokeStyle="white";
+ctx.arc(200,200,25,0,7);
+ctx.stroke();
+ctx.fillStyle="white";
+ctx.fill();
+
+ctx.lineWidth="10";
+ctx.beginPath();
+ctx.strokeStyle="white";
+ctx.moveTo(200,200);
+ctx.lineTo(200,301);
+ctx.stroke();
+
+ctx.lineWidth="4";
+//ctx.beginPath();
+ctx.strokeStyle="black";
+ctx.font="40px Arial";
+ctx.strokeText("State Bank",260,310);
+ctx.strokeText("of India",280,360);
+
+}
+</script>
+<body onload="state();" bgcolor="black"><center>
+<font size="+4" color="red">STATE BANK OF LOGO</font><br>
+<canvas id="t" height="500" width="500" style="background-color:cyan;"></canvas>
+</center>
+</body>
+</html>
